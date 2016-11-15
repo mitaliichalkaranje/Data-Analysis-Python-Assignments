@@ -7,6 +7,8 @@ Feedbacks :
 * Do not store the data in a single file.
 * Analysis are good. Presentation of answers is good(Not the UI but as a CSV file).
 * Data collection needs more effort. Save the data and read it to analyze. Try to avoid calling the API unless required since you have the limitations.
+
+
 > Fetch Data file seems to be incorrect. 
 
 
