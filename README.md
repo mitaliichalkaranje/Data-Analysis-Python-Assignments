@@ -7,6 +7,8 @@ API Reference: youtube data API - https://developers.google.com/youtube/v3/docs/
 Packages used: matplotlib, pandas, math, requests, json, tkinter
 
 Data Collection:
+    
+    Path for data collection script - FinalProject/collect_data.py
 
     API Methods used:
     
