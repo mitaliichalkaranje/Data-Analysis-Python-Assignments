@@ -59,4 +59,8 @@ Data Collection:
     5. For a selected country what is average view counts for every month ?
         >Select a Country from available dropdown menu in the popup window
         >Average count for every month for published videos is calculated
+<<<<<<< HEAD
         >The result file will contain month and their correspnding average viewcounts
+=======
+        >The result file will contain month and their correspnding average viewcounts
+>>>>>>> 5b8bf66eb0c3f675e5df85b8d6fb6a3eb2f8c130
