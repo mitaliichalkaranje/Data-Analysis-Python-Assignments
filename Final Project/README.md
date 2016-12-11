@@ -68,7 +68,7 @@ Data Files created after collection in Data folder:
         >The total number of most popular videos published in a country is calculated
         
         >The statictics is plotted on a World Map:
-<img width="613" alt="analysis1_2" src="https://cloud.githubusercontent.com/assets/22486197/21080758/ff7d702c-bf84-11e6-8e5d-8b992535b458.PNG">        
+<img width="603" alt="analysis_worldmap" src="https://cloud.githubusercontent.com/assets/22486197/21080881/4c4215ae-bf88-11e6-9506-14e8bf82382a.PNG">        
         Analysis file path: Analysis/analysis_3.csv
         
     4. For a selected country what is the peak month for published videos ?
