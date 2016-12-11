@@ -1,9 +1,10 @@
 
 # coding: utf-8
 
-# In[ ]:
+# In[4]:
 
-import tkinter as tk
+#Top Categories of most popular videos
+import tkinter as SelectCountry
 from IPython.display import clear_output
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -16,9 +17,9 @@ OPTIONS =country.set_index('RegionName')['RegionID'].to_dict()
 class App(object):
     def __init__(self, master, **kwargs):
         self.master = master
-        self.var = tk.StringVar()
+        self.var = SelectCountry.StringVar()
         self.var.set('Select Country')
-        self.option = tk.OptionMenu(master, self.var, *OPTIONS.keys())
+        self.option = SelectCountry.OptionMenu(master, self.var, *OPTIONS.keys())
         self.option.pack()
         def ok():
             if self.var.get()=='Select Country':
@@ -26,14 +27,14 @@ class App(object):
                     self.label.destroy()
                 except (NameError, AttributeError):
                     pass
-                self.label = tk.Label(master,text="Please select a Country..!")
+                self.label = SelectCountry.Label(master,text="Please select a Country..!")
                 self.label.pack()
             else:
                 try:
                     self.label.destroy()
                 except (NameError, AttributeError):
                     pass
-                self.label = tk.Label(master,text="value is"+self.var.get())
+                self.label = SelectCountry.Label(master,text="value is"+self.var.get())
                 self.label.pack()
                 d=pd.read_csv('data/Data.csv')
                 result=pd.DataFrame()
@@ -55,10 +56,10 @@ class App(object):
                 plt.legend(loc='best')
                 plt.title('Top Categories of most popular videos in '+self.var.get())
                 plt.show()
-        self.button=tk.Button(master, text="OK", command=ok)
+        self.button=SelectCountry.Button(master, text="OK", command=ok)
         self.button.pack()
         
-root = tk.Tk()
+root = SelectCountry.Tk()
 app = App(root)
 root.mainloop()
 
